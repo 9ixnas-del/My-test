@@ -79,7 +79,7 @@
         OSVersionValues             = [array]$Global:OSDModuleResource.OSDCloud.Values.Version
 
         captureScreenshots          = $false
-        ClearDiskConfirm            = $true
+        ClearDiskConfirm            = $false
         restartComputer             = $true
 
         updateDiskDrivers           = $true
