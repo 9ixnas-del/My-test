@@ -184,3 +184,6 @@ Unregister-ScheduledTask -TaskName "OSDCloud-Cleanup" -Confirm:$false -ErrorActi
     $Trigger = New-ScheduledTaskTrigger -AtStartup
     Register-ScheduledTask -TaskName "OSDCloud-Cleanup" -Action $Action -Trigger $Trigger -RunLevel Highest -Force
 }
+
+# Auto-launch the function
+Start-OSDCloudGUI
